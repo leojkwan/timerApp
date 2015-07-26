@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TimerView">
+            <connections>
+                <outlet property="dialImageView" destination="b0V-4d-8sc" id="dZf-x8-hLr"/>
+                <outlet property="timerView" destination="dDR-kR-8Kk" id="CMU-9R-uEg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="dDR-kR-8Kk">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Dial" translatesAutoresizingMaskIntoConstraints="NO" id="b0V-4d-8sc">
+                    <rect key="frame" x="109" y="51" width="292" height="292"/>
+                    <color key="backgroundColor" red="0.88638336490000003" green="0.29463545099999999" blue="0.17902255519999999" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.32781942580000001" green="0.87879207329999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="b0V-4d-8sc" secondAttribute="centerX" id="GtX-75-5PH"/>
+                <constraint firstItem="b0V-4d-8sc" firstAttribute="top" secondItem="dDR-kR-8Kk" secondAttribute="top" constant="50" id="gcH-q5-OGB"/>
+                <constraint firstItem="b0V-4d-8sc" firstAttribute="leading" secondItem="dDR-kR-8Kk" secondAttribute="leading" constant="147" id="kWb-Dj-0O2"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="GtX-75-5PH"/>
+                    <exclude reference="gcH-q5-OGB"/>
+                    <exclude reference="kWb-Dj-0O2"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="394" y="343"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Dial" width="533" height="533"/>
+    </resources>
+</document>
